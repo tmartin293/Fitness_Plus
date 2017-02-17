@@ -1,0 +1,43 @@
+<html>
+
+   <head>
+      <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
+      <meta http-equiv = "Content-Language" content = "en-us" />
+      <title>Fitness Plus Signup</title>
+      <%= stylesheet_link_tag "Format_Support" %>
+   </head>
+
+   <body id = "Fitness">
+      <div id = "container">
+         
+         <div id = "title">
+            <h1>Fitness Plus New User Signup</h1>
+         </div>
+            <div id = "header">      
+               <h3>Fitness Plus is free to signup and use. Please enter your personal infomation below to create a new Fitness Plus user account and begin receiving a personalized workout regimen.</h3>
+            </div>
+
+         <div id = "sidebar">
+            <h2>Links:</h2>
+            <%= link_to 'Homepage', controller: 'welcome' %>
+            <h3></h3>
+            <%= link_to 'About Fitness Plus', controller: 'info' %>
+            <h3></h3>
+            <%= link_to 'Comments and Support Help', controller: 'supports', action: 'new', id: @support %>
+         </div>
+
+         <div id = "content">
+            <%= yield -%>
+         </div>
+
+         <div id = "image">
+            <%= image_tag "workout4.jpg", size: "300x300" %>
+         </div>  
+
+         <div id = "form">
+         </div>
+         
+      </div>
+   </body>
+   
+</html>

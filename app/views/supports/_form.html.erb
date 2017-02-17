@@ -1,0 +1,47 @@
+<%= form_for(support) do |f| %>
+  <% if support.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(support.errors.count, "error") %> prohibited this support from being saved:</h2>
+
+      <ul>
+      <% support.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= stylesheet_link_tag "Format_New_Support" %>
+
+<div id = "form">
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <h3></h3>
+    <%= f.label :Email %>
+    <%= f.text_field :Email %>
+  </div>
+
+  <div class="field">
+    <h3></h3>
+    <%= f.label :Subject %>
+    <%= f.text_field :Subject %>
+  </div>
+
+  <div class="field">
+    <h3></h3>
+    <%= f.label :Message %>
+    <%= f.text_area :Message, size: "30x10" %>
+  </div>
+
+  <div class="actions">
+    <h2></h2>
+    <%= f.submit "Submit" %>
+  </div>
+
+</div>
+<% end %>

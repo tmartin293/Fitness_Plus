@@ -1,0 +1,32 @@
+
+<%= stylesheet_link_tag "Format_New_Support" %>
+
+<div id = "form_show">
+
+	<h3>Message received. Thank you for your interest in Fitness Plus!</h3>
+
+	<h1>Copy of Sent Message:</h1>
+
+	<p>
+  		<strong>Name:</strong>
+  		<%= @support.Name %>
+	</p>
+
+	<p>
+  		<strong>Email:</strong>
+  		<%= @support.Email %>
+	</p>
+
+	<p>
+  		<strong>Subject:</strong>
+  		<%= @support.Subject %>
+	</p>
+
+	<p>
+  		<strong>Message:</strong>
+  		<%= @support.Message %>
+	</p>
+
+</div> 
+
+<%= link_to 'Back', controller: 'supports', action: 'new', id: @support %>

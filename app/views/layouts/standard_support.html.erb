@@ -1,0 +1,45 @@
+<html>
+
+   <head>
+      <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
+      <meta http-equiv = "Content-Language" content = "en-us" />
+      <title>Fitness Plus Support</title>
+      <%= stylesheet_link_tag "Format_Support" %>
+   </head>
+
+   <body id = "Fitness">
+      <div id = "container">
+         
+         <div id = "title">
+            <h1>Fitness Plus Support Help and Comments Page</h1>
+         </div>
+            <div id = "header">      
+               <h3>Fitness Plus is managed by San Jose State University Undergraduate students. Originally developed as a Software Engineering project, Fitness Plus has garnered widespread popularity and praise among the fitness community. Updates and additional functionality are added on a consistent basis from user feedback.</h3>
+
+               <h3>For support help or to leave a comment, please fill out the form below. Thank you for your interest in Fitness Plus!</h3>
+            </div>
+
+         <div id = "sidebar">
+            <h2>Links:</h2>
+            <%= link_to 'Homepage', controller: 'welcome' %>
+            <h3></h3>
+            <%= link_to 'About Fitness Plus', controller: 'info' %>
+            <h3></h3>
+            <%= link_to 'New User Signup', controller: 'signups', action: 'new', id: @signup %>
+         </div>
+
+         <div id = "content">
+            <%= yield -%>
+         </div>
+
+         <div id = "image">
+            <%= image_tag "PC.jpg", size: "300x300" %>
+         </div>  
+
+         <div id = "form">
+         </div>
+         
+      </div>
+   </body>
+   
+</html>

@@ -1,0 +1,15 @@
+div#title {
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+div#form {
+  font-weight: bold;
+}
+
+
+div#form_show {
+  font-weight: bold;
+  text-align: left;
+}

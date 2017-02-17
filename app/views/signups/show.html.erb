@@ -1,0 +1,32 @@
+
+<%= stylesheet_link_tag "Format_New_Support" %>
+
+<div id = "form_show">
+
+	<h2>New user account sucessfully created.</h2>
+
+	<p>
+  		<strong>Name:</strong>
+  		<%= @signup.Name %>
+	</p>
+
+	<p>
+  		<strong>Email:</strong>
+  		<%= @signup.Email %>
+	</p>
+
+	<p>
+  		<strong>Subject:</strong>
+  		<%= @signup.Username %>
+	</p>
+
+	<p>
+  		<strong>Message:</strong>
+  		<%= @signup.Password %>
+	</p>
+
+
+	<h3></h3>
+
+<%= link_to 'Back', new_signup_path(@signup) %> 
+
