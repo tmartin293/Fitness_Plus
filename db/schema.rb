@@ -12,6 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20170225164647) do
 
+  create_table "contacts", force: :cascade do |t|
+    t.string   "Name"
+    t.string   "Email"
+    t.string   "Subject"
+    t.string   "Message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "models", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -37,6 +46,24 @@ ActiveRecord::Schema.define(version: 20170225164647) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+  end
+
+  create_table "signups", force: :cascade do |t|
+    t.string   "Name"
+    t.string   "Username"
+    t.string   "Email"
+    t.string   "Password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "supports", force: :cascade do |t|
+    t.string   "Name"
+    t.string   "Email"
+    t.string   "Subject"
+    t.string   "Message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
