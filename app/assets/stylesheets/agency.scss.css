@@ -305,6 +305,10 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+
+  /* Changing width of portfolio item */
+  width: 380px;
+
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -568,12 +572,16 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
   padding: 20px;
+
 }
 section#contact .form-group input.form-control {
   height: auto;
 }
 section#contact .form-group textarea.form-control {
   height: 236px;
+
+  /* Adjusting width */
+  width: 525px;
 }
 section#contact .form-control:focus {
   border-color: #fed136;
