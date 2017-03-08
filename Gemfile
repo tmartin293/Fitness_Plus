@@ -23,8 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# WDM (windows directory monitor) gem for Windows machines
-gem 'wdm', '~> 0.1.1'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -58,6 +57,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development do
   gem 'sqlite3'
+  # WDM (windows directory monitor) gem for Windows machines
+  gem 'wdm', '~> 0.1.1'
 end
 
 group :production do 
