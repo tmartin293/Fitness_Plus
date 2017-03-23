@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.0.1'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -23,7 +25,8 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-#Cali was here
+# WDM (windows directory monitor) gem for Windows machines
+gem 'wdm', '~> 0.1.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -55,13 +58,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-group :development do
-  gem 'sqlite3'
-  # WDM (windows directory monitor) gem for Windows machines
-  gem 'wdm', '~> 0.1.1'
-end
-
-group :production do 
-  gem 'pg'
-  gem 'rails_12factor'
-end
