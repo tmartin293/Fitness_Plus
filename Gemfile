@@ -26,7 +26,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 # WDM (windows directory monitor) gem for Windows machines
-gem 'wdm', '~> 0.1.1'
+#gem 'wdm', '~> 0.1.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
