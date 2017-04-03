@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  age: 1
-  height: 1
-  skill_level: 1
+  height_ft: 1
+  height_in: 1
   weight: 1
+  age: 1
 
 two:
-  age: 1
-  height: 1
-  skill_level: 1
+  height_ft: 1
+  height_in: 1
   weight: 1
+  age: 1

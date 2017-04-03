@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170402211341) do
+ActiveRecord::Schema.define(version: 20170403013733) do
 
   create_table "models", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(version: 20170402211341) do
     t.index ["reset_password_token"], name: "index_models_on_reset_password_token", unique: true
   end
 
+  create_table "personal_infos", force: :cascade do |t|
+    t.integer  "height_ft"
+    t.integer  "height_in"
+    t.integer  "weight"
+    t.integer  "age"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "posts", force: :cascade do |t|
     t.text     "description"
     t.datetime "created_at",         null: false
@@ -38,17 +47,6 @@ ActiveRecord::Schema.define(version: 20170402211341) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.integer  "user_id"
-  end
-
-  create_table "user_infos", force: :cascade do |t|
-    t.integer  "age"
-    t.integer  "height"
-    t.integer  "skill_level"
-    t.integer  "weight"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "users_id"
-    t.index ["users_id"], name: "index_user_infos_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|
