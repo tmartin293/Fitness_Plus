@@ -238,6 +238,10 @@ th {
   h3 {
     page-break-after: avoid;
   }
+  .info_link {
+    text-decoration: line-through;
+    color: blue;
+  }
   .navbar {
     display: none;
   }
