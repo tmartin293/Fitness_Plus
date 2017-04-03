@@ -1,6 +1,6 @@
 <br>
 <br>
-<!-- row 2 -->
+<!-- row 1 -->
 <div class="row">
     <div class="col-xs-3">
         <div class="panel panel-default">
@@ -23,4 +23,19 @@
             </div>
         </div>
     </div>
+</div>
+<!-- row 2 -->
+<div class="row">
+    <% for p in @posts %>
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+               <p> <%= image_tag(@post.image.url(:medium)) %>
+                <br>
+                <%= @post.description %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <% end %>
 </div>
