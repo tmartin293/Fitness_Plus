@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Height ft</th>
       <th>Height in</th>
       <th>Weight</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @personal_infos.each do |personal_info| %>
       <tr>
+        <td><%= personal_info.name %></td>
         <td><%= personal_info.height_ft %></td>
         <td><%= personal_info.height_in %></td>
         <td><%= personal_info.weight %></td>

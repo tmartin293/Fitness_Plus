@@ -12,24 +12,34 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :name, 'Your Name' %>
+    <%= f.text_field :name %>
+  </div>
+  <br>
+
+  <div class="field">
     <%= f.label :height_ft, 'Your height in feet' %>
     <%= f.number_field :height_ft %>
   </div>
+  <br>
 
   <div class="field">
     <%= f.label :Height_in, 'Your height in inches' %>
     <%= f.number_field :height_in %>
   </div>
+  <br>
 
   <div class="field">
     <%= f.label :weight, 'Your weight in pounds' %>
     <%= f.number_field :weight %>
   </div>
+  <br>
 
   <div class="field">
     <%= f.label :age, 'Your age' %>
     <%= f.number_field :age %>
   </div>
+  <br>
 
   <div class="actions">
     <%= f.submit %>
