@@ -26,13 +26,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 # WDM (windows directory monitor) gem for Windows machines
-<<<<<<< HEAD
 #gem 'wdm', '~> 0.1.1'
-=======
-# gem 'wdm', '~> 0.1.1'
-
-
->>>>>>> 35c1481971748685a83dd8aeebe69b3d3ceae1ac
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
