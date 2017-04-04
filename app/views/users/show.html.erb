@@ -1,5 +1,5 @@
 
-<!-- row 1 -->
+<!-- Title/Links Row -->
 <br>
 <div class="row">
     <div class="col-xs-3">
@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<!-- row 2 -->
+<!-- Workout Routines Row 1-->
 <div class="row">
     <div class="col-xs-4">
         <div class="panel panel-default">
@@ -50,7 +50,7 @@
         </div>
     </div>
 </div>
-<!-- row 3 -->
+<!-- Workout Routines Row 2 -->
 <div class="row">
     <div class="col-xs-4">
         <div class="panel panel-default">
@@ -75,3 +75,48 @@
         </div>
     </div>
 </div>
+<!-- Title/Links Row -->
+<br>
+<div class="row">
+    <div class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <a href="http://localhost:3000/posts/new"><h6>Add Post</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Posts</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+             <h6 style="font-family:cursive;">NEVER GIVE UP </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Posts Row -->
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <% @posts.each do |x| %>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <%= image_tag(x.image.url(:medium)) %>
+                        <br>
+                            <%= x.description %>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
+
