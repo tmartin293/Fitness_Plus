@@ -5,7 +5,6 @@
     <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
-                <a href="http://localhost:3000/personal_infos/new"><h6>Add Personal Information</h6></a>
                 
             </div>
         </div>
@@ -20,7 +19,7 @@
     <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
-             <a href="http://localhost:3000/personal_infos/edit"><h6>Update Personal Information</h6></a>
+             <h6><%= link_to "Update Personal Information", edit_user_personal_info_path(current_user, @current_profile_id) %></h6>
             </div>
         </div>
     </div>

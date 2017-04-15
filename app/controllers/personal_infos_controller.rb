@@ -25,7 +25,7 @@ class PersonalInfosController < ApplicationController
   # POST /personal_infos
   # POST /personal_infos.json
   def create
-    @personal_info = PersonalInfo.new(personal_info_params)
+    @personal_info = PersonalInfo.new(personal_info_params).merge(user_id: current_user.id)
 
     respond_to do |format|
       if @personal_info.save
@@ -59,6 +59,19 @@ class PersonalInfosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to personal_infos_url, notice: 'Personal info was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def find_user
+    if param[:user_id]
+      @user = User.find_by_id([:user_id])
+    end
+  end
+
+
+  def find_profile
+    if param[:id]
+      @personalinfo = PersonalInfo.find_by_id([:id])
     end
   end
 
