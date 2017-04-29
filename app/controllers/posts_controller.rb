@@ -9,7 +9,6 @@ class PostsController < ApplicationController
   def show
   	@post = Post.find(params[:id])
   end
-
   def create
   	@post = Post.new(permit_post)
   	if @post.save
