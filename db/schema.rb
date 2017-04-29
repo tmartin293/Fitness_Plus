@@ -10,17 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170415050107) do
-
-  create_table "personal_infos", force: :cascade do |t|
-    t.integer  "height_ft"
-    t.integer  "height_in"
-    t.integer  "weight"
-    t.integer  "age"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
-  end
+ActiveRecord::Schema.define(version: 20170429213329) do
 
   create_table "posts", force: :cascade do |t|
     t.text     "description"
