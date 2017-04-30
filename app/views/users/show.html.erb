@@ -1,25 +1,25 @@
-<%= @user.name %>
+<!%= @user.name %>
 <!-- Title/Links Row -->
 <br>
 <div class="row">
     <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
-                
+                <h4>Hello <%= @user.name %>!</h4>
             </div>
         </div>
     </div>
     <div class="col-xs-6">
         <div class="panel panel-default">
             <div class="panel-body">
-                <h4>Workout Routines</h4>
+                <h3>Workout Routines</h3>
             </div>
         </div>
     </div>
     <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
-             <h6></h6>
+             <h4>Experience (1-5):  <%= @user.experience %></h4>
             </div>
         </div>
     </div>
@@ -29,22 +29,21 @@
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/content/beginner-chest-training-guide.html" target="_blank"> <img src="../assets/portfolio/Chest2.jpg" alt="Chest"/> </a>
+               <img src="../assets/portfolio/Chest2.jpg" alt="Chest"/> <h4><%= link_to "Chest Workouts", :controller => "pages", :action =>"chest" %></h4>
             </div>
         </div>
     </div>
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/fun/cable-ready-abs-10-cable-based-ab-workouts.html" target="_blank"> <img src="../assets/portfolio/Abs2.jpg" alt="Abs"/> </a>
+                <img src="../assets/portfolio/Abs2.jpg" alt="Abs"/> <h4><%= link_to "Ab Workouts", :controller => "pages", :action =>"abs" %></h4>
             </div>
         </div>
     </div>
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/content/arm-workouts-for-men-5-biceps-blasts.html" target="_blank"> <img src="../assets/portfolio/Arms2.jpg" alt="Arms"/> </a>
-               </a>
+                <img src="../assets/portfolio/Arms2.jpg" alt="Arms"/> <h4><%= link_to "Arm Workouts", :controller => "pages", :action =>"arms" %></h4>
             </div>
         </div>
     </div>
@@ -54,21 +53,21 @@
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/content/5-best-shoulder-workouts-for-mass-an-intermediate-guide.html" target="_blank"> <img src="../assets/portfolio/Shoulders2.jpg" alt="Shoulders"/> </a>
+               <img src="../assets/portfolio/Shoulders2.jpg" alt="Shoulders"/> <h4><%= link_to "Shoulder Workouts", :controller => "pages", :action =>"shoulders" %></h4>
             </div>
         </div>
     </div>
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/content/5-back-workouts-for-mass-a-beginners-guide.html" target="_blank"> <img src="../assets/portfolio/Back2.jpg" alt="Back"/> </a>
+                <img src="../assets/portfolio/Back2.jpg" alt="Back"/> <h4><%= link_to "Back Workouts", :controller => "pages", :action =>"back" %></h4>
             </div>
         </div>
     </div>
     <div class="col-xs-4">
         <div class="panel panel-default">
             <div class="panel-body">
-               <a href="https://www.bodybuilding.com/content/5-leg-workouts-for-mass-a-beginners-guide.html" target="_blank"> <img src="../assets/portfolio/Legs2.jpg" alt="Legs"/> </a>
+               <img src="../assets/portfolio/Legs2.jpg" alt="Legs"/> <h4><%= link_to "Leg Workouts", :controller => "pages", :action =>"legs" %></h4>
                </a>
             </div>
         </div>
@@ -80,7 +79,7 @@
     <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
-                <a href="http://localhost:3000/posts/new"><h6>Add Post</h6>
+                <a href="http://localhost:3000/posts/new"><h4>Add Post</h4>
                 </a>
             </div>
         </div>

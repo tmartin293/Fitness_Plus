@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  
   def arms
   end
 
@@ -16,4 +17,5 @@ class PagesController < ApplicationController
 
   def back
   end
+  
 end
