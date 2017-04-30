@@ -7,8 +7,8 @@ class User < ApplicationRecord
      
   #has_one :personal_info
   
-  #validates :name, :experience, presence: true
-  #validates :name, length: { maximum: 15 } 
-  #validates :experience, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 5 }
+  validates :name, :experience, presence: true
+  validates :name, length: { maximum: 15 } 
+  validates :experience, numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 5 }
 
 end
