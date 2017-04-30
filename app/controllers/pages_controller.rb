@@ -1,6 +1,19 @@
-class PagesController < ActionController::Base
-  def help
-    # put any code here that you need 
-    # (although for a static view you probably won't have any)
+class PagesController < ApplicationController
+  def arms
+  end
+
+  def chest
+  end
+
+  def abs
+  end
+
+  def shoulders
+  end
+
+  def legs
+  end
+
+  def back
   end
 end
