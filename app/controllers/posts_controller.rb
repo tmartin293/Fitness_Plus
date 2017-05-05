@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   end
 
   def index
+    #flash[:notice] = "Your comment was received."
   end
 
   def show
@@ -12,7 +13,7 @@ class PostsController < ApplicationController
   def create
   	@post = Post.new(permit_post)
   	if @post.save
-  		flash[:success]= "Yay! Your post has been created."
+  		flash[:success] = "Yay! Your post has been created."
   		redirect_to post_path(@post)
   	else
   		flash[:error] = @post.error.full_messages
