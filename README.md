@@ -1,25 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Application runs best on Mac OSX
 
-Things you may want to cover:
+- In order to post pictures, Image Magick program must be installed 
+Link: https://www.imagemagick.org/script/index.php
 
-* Ruby version
+- Comments that users submit do not get sent to anyone
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Fitness-Application
+- Users will not be sent any emails regarding their login information even if they request it

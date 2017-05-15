@@ -5,5 +5,6 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   	@posts = Post.where("user_id = ?", User.find(params[:id]).id)
   	@newPost = Post.new
+
   end
 end

@@ -14,6 +14,8 @@ gem "paperclip", "~> 5.0.0"
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+# Gem to add many records into database at once
+gem 'activerecord-import', '~> 0.18.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
